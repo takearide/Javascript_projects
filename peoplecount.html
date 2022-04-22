@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> People counter </title>
+        <style>
+            body{
+                text-align: center;
+            }
+            button{
+                border: none;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                color: white;
+                width: 200px;
+                font-weight:bold;
+                border-radius: 10px;
+                font-size:15px;
+                margin-top:15px;
+                margin-bottom : 30px;
+            }
+            #increment_btn{
+                background-color:darkred;
+            }
+            #save_btn{
+                background-color:darkgreen;
+            }
+            #save_el, #count, #header{
+                font-weight: bold;
+                font-size: 40px;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 id="header"> People Entered :</h1>
+        <h1 id="count"> 0 </h1>
+        <button id="increment_btn" onClick="increment()">Increment</button></br>
+        <button id="save_btn" onclick="save()">Save</button>
+        <p id="save_el">Previous Entries: </p>
+        <script src="peoplecount.js"></script>
+    </body>
+</html>
