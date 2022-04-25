@@ -21,23 +21,28 @@
             #increment_btn{
                 background-color:darkred;
             }
-            #save_btn{
+            #save_btn, #sum{
                 background-color:darkgreen;
             }
-            #save_el, #count, #header{
+            #save_el, #count, #header,#displaysum{
                 font-weight: bold;
                 font-size: 40px;
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
-            
+            #decrement{
+                background-color:darkred;
+            }
         </style>
     </head>
     <body>
         <h1 id="header"> People Entered :</h1>
         <h1 id="count"> 0 </h1>
-        <button id="increment_btn" onClick="increment()">Increment</button></br>
-        <button id="save_btn" onclick="save()">Save</button>
+        <button id="increment_btn" onClick="increment()">INCREMENT</button></br>
+        <button id="save_btn" onclick="save()">SAVE</button><br>
+        <button id="decrement" onclick="decrement()">DECREMENT</button>
         <p id="save_el">Previous Entries: </p>
+        <button id="sum" onclick="displaysum()">SUM</button>
+        <p id="displaysum">Sum:</p>
         <script src="peoplecount.js"></script>
     </body>
 </html>
